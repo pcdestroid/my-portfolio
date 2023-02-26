@@ -190,7 +190,9 @@ a {
     }
 
 }
+
 @media only screen and (max-width: 1400px) {
+
     /* estilos CSS para telas com largura máxima de 600px */
     .font-exo {
         font-family: 'Exo 2', sans-serif;
@@ -199,8 +201,16 @@ a {
         min-height: 100px;
     }
 
+    .font-exo-small {
+        font-family: 'Exo 2', sans-serif;
+        font-size: 3vw;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
 }
+
 @media only screen and (max-width: 600px) {
+
     /* estilos CSS para telas com largura máxima de 600px */
     .font-exo {
         font-family: 'Exo 2', sans-serif;
@@ -208,12 +218,12 @@ a {
         background-color: rgba(0, 0, 0, 0.5);
         min-height: 100px;
     }
-}
 
-.font-exo-small {
-    font-family: 'Exo 2', sans-serif;
-    font-size: 1.5vw;
-    background-color: rgba(0, 0, 0, 0.5);
+    .font-exo-small {
+        font-family: 'Exo 2', sans-serif;
+        font-size: 4vw;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
 }
 
 .font-space-mono {
