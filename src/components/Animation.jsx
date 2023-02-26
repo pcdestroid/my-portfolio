@@ -91,10 +91,8 @@ function Animation() {
             camera.updateProjectionMatrix()
             renderer.setSize(window.innerWidth, window.innerHeight)
         }
-
+        
         window.addEventListener('resize', onWindowResize)
-
-
         renderer.setPixelRatio(devicePixelRatio)
 
         //add render ao body
@@ -104,7 +102,7 @@ function Animation() {
         const planeMaterial = new THREE.
             MeshPhongMaterial({
                 side: THREE.DoubleSide,
-                flatShading: THREE.FlatShading,
+                // flatShading: THREE.FlatShading,
                 vertexColors: true
             })
 

@@ -8,7 +8,72 @@
 }
 
 /* Menu */
-.menu {
+@media screen and (min-width: 768px) {
+    .menu-botao {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .texto-topo {
+        color: white;
+        display: block;
+        position: fixed;
+        text-align: center;
+        font-family: 'Exo 2', sans-serif;
+        width: 100%;
+        top: 25%;
+        z-index: 3;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        /* min-width: 600px; */
+        transition: all 1.5s ease-in-out;
+        box-sizing: border-box;
+        overflow: auto;
+        font-size: 3vw;
+    }
+
+    .texto-topo:hover {
+        transform: scale(1.2);
+    }
+
+    .texto-central {
+        color: white;
+        display: block;
+        position: fixed;
+        text-align: center;
+        width: 100%;
+        top: 40%;
+        z-index: 4;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        transition: all 1s ease-in-out;
+        box-sizing: border-box;
+        overflow: auto;
+    }
+
+    .texto-final {
+        color: white;
+        display: block;
+        position: fixed;
+        text-align: center;
+        width: 100%;
+        top: 80%;
+        z-index: 3;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        /* min-width: 600px; */
+        transition: all 1.5s ease-in-out;
+        box-sizing: border-box;
+        overflow: auto;
+    }
+}
+
+/* Menu para desktop */
+nav {
     display: flex;
     position: fixed;
     width: 100%;
@@ -16,25 +81,118 @@
     height: 50px;
     align-items: center;
     justify-content: center;
+    text-align: center;
     color: white;
     font-family: 'Exo 2', sans-serif;
-    font-size: 25px;
-    background-color: rgba(0, 0, 0, 0.9);
     min-height: 200px;
-    min-width: 600px;
-    margin-bottom: 150px;
     transition: all 5s ease-in-out;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adicionado */
 }
 
-.menu:hover {
+nav:hover {
     transform: scale(1.2);
 }
 
+/* Menu para dispositivos móveis */
+@media screen and (max-width: 768px) {
+
+    nav {
+        display: flex;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        padding-top: 20px;
+        flex-direction: column;
+        height: auto;
+        min-height: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    nav li {
+        display: block;
+        position: relative;
+        text-align: center;
+        padding-top: 10px;
+        margin: 0;
+    }
+
+    nav a {
+        padding-top: 20px;
+        padding: 0px;
+    }
+
+    .fundo-logo-git {
+        margin-top: 10px;
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+
+    nav:hover {
+        transform: scale(1.1);
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto-topo {
+        color: white;
+        font-size: large;
+        display: block;
+        position: fixed;
+        text-align: center;
+        font-family: 'Exo 2', sans-serif;
+        width: 100%;
+        top: 30%;
+        z-index: 3;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transition: all 1.5s ease-in-out;
+        box-sizing: border-box;
+        overflow: auto;
+        font-size: 5vw;
+    }
+
+    .texto-central {
+        color: white;
+        display: block;
+        position: fixed;
+        text-align: center;
+        width: 100%;
+        top: 42%;
+        z-index: 4;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        transition: all 1s ease-in-out;
+        box-sizing: border-box;
+        overflow: auto;
+    }
+
+    .texto-final {
+        color: white;
+        display: block;
+        position: fixed;
+        text-align: center;
+        width: 100%;
+        top: 70%;
+        z-index: 3;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transition: all 1.5s ease-in-out;
+        box-sizing: border-box;
+        overflow: auto;
+    }
+}
+
 li {
-    display: flex;
     margin-right: 30px;
     list-style: none;
     transition: all 0.3s ease-in-out;
+    flex-direction: row;
 }
 
 li:hover {
@@ -43,9 +201,10 @@ li:hover {
 
 /* Controle de música */
 .volume-control {
+
     height: 4px;
     border-radius: 4px;
-    margin: 15px;
+    margin: 10px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -61,61 +220,7 @@ li:hover {
 
 /* Fim menu */
 
-.texto-central {
-    color: white;
-    display: block;
-    position: fixed;
-    text-align: center;
-    width: 100%;
-    top: 40%;
-    z-index: 4;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    /* min-width: 600px; */
-    transition: all 1s ease-in-out;
-    box-sizing: border-box;
-    overflow: auto;
-}
-
-.texto-final {
-    color: white;
-    display: block;
-    position: fixed;
-    text-align: center;
-    width: 100%;
-    top: 80%;
-    z-index: 3;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    /* min-width: 600px; */
-    transition: all 1.5s ease-in-out;
-    box-sizing: border-box;
-    overflow: auto;
-}
-
 .texto-final:hover {
-    transform: scale(1.2);
-}
-
-.texto-topo {
-    color: white;
-    display: block;
-    position: fixed;
-    text-align: center;
-    font-family: 'Exo 2', sans-serif;
-    width: 100%;
-    top: 25%;
-    z-index: 3;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    /* min-width: 600px; */
-    transition: all 1.5s ease-in-out;
-    box-sizing: border-box;
-    overflow: auto;
-    font-size: 2vw;
-}
-
-.texto-topo:hover {
     transform: scale(1.2);
 }
 

@@ -19,7 +19,7 @@ export default function Home() {
         <p>Aqui está o meu portfólio de projetos de programação.</p>
       </article>
       <footer>
-        <p>© 2023 by pcdestroid. All rights reversed.</p>
+        <p>© 2023 by AlanFrancis. All rights reversed.</p>
       </footer>
     </>
   )
