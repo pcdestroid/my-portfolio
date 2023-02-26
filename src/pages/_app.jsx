@@ -1,5 +1,5 @@
 import '@/styles/globals.css'
-import Music from '@/components/music.jsx'
+import Music from '@/components/Music.jsx'
 import Menu from '@/components/Menu.jsx'
 import Animation from '@/components/Animation.jsx'
 
