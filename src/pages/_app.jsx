@@ -1,8 +1,8 @@
 import '/src/styles/globals.css'
-import Music from '/src/components/music'
-import Headpage from '/src/components/Headpage'
-import Menu from '/src/components/Menu'
-import Animation from '/src/components/Animation'
+import Music from '/src/components/music.jsx'
+import Headpage from '/src/components/Headpage.jsx'
+import Menu from '/src/components/Menu.jsx'
+import Animation from '/src/components/Animation.jsx'
 
 export default function App({ Component, pageProps }) {
   return <>
