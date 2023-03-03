@@ -6,12 +6,14 @@ import Head from 'next/head';
 
 export default function App({ Component, pageProps }) {
   return <>
-
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>
     <nav><Menu /><Music /></nav>
     <Component {...pageProps} />
     {Animation()}
+    <footer>
+      <p>© 2023 by AlanFrancis. All rights reversed.</p>
+    </footer>
   </>
 }

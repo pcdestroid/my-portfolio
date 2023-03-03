@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -18,9 +17,8 @@ export default function Home() {
         <p>Da ideia ao código, do código à solução.</p>
         <p>Aqui está o meu portfólio de projetos de programação.</p>
       </article>
-      <footer>
-        <p>© 2023 by AlanFrancis. All rights reversed.</p>
-      </footer>
+
+      { }
     </>
   )
 }
