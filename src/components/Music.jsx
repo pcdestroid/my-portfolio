@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 function AudioPlayer({ src }) {
     const [audio, setAudio] = useState(null);
-    const [volume, setVolume] = useState(0.5);
+    const [volume, setVolume] = useState(0.1);
 
     useEffect(() => {
         const newAudio = new Audio(src);

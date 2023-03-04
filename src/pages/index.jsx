@@ -13,6 +13,7 @@ export default function Home() {
         <p>ONDE A CRIATIVIDADE ENCONTRA </p>
         <p> A FUNCIONALIDADE</p>
       </article>
+
       <article className="font-exo-small texto-final">
         <p>Da ideia ao código, do código à solução.</p>
         <p>Aqui está o meu portfólio de projetos de programação.</p>
