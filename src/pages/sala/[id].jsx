@@ -36,7 +36,7 @@ function Produtos(props) {
         async function load() {
 
             console.log(await (await fetch("https://my-portfolio-kappa-lime.vercel.app/api/ws")).text());
-            const newWs = new WebSocket("ws://my-portfolio-kappa-lime.vercel.app:8080");
+            const newWs = new WebSocket("wss://my-portfolio-kappa-lime.vercel.app:8080");
             newWs.onmessage = (e) => {
                 setMessage(e.data);
                 console.log(e.data);
