@@ -35,7 +35,7 @@ function Sala(props) {
     useEffect(() => {
         async function load() {
 
-            console.log(await (await fetch("https://my-portfolio-kappa-lime.vercel.app/api/ws")).text());
+            console.log(await (await fetch("./api/ws")).text());
             const newWs = new WebSocket("wss://my-portfolio-kappa-lime.vercel.app:443");
             newWs.onmessage = (e) => {
                 setMessage(e.data);
