@@ -1,7 +1,7 @@
 const WebSocket = require('ws');
 
 const clients = [];
-const wss = new WebSocket.Server({ port: 443 }); //server: req.socket.server
+const wss = new WebSocket.Server({ port: 8080 }); //server: req.socket.server
 wss.on('connection', (ws) => {
 
     console.log('client: ok');
