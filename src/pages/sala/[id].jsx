@@ -28,7 +28,7 @@ export async function getStaticProps(context) {
     };
 }
 
-function Produtos(props) {
+function Sala(props) {
     const [message, setMessage] = useState("");
     const [ws, setWs] = useState(null);
 
@@ -49,9 +49,12 @@ function Produtos(props) {
     }, []);
 
     function call() {
-        ws.send(document.getElementById("textarea").value);
+        if (ws && ws.readyState === WebSocket.OPEN) {
+            ws.send(document.getElementById("textarea").value);
+        } else {
+            console.log("WebSocket is not ready yet.");
+        }
     }
-
     return (
         <>
             <article className="texto-topo">
@@ -64,4 +67,4 @@ function Produtos(props) {
     );
 }
 
-export default Produtos;
+export default Sala;
