@@ -24,7 +24,7 @@
 }
 
 .pixel-index:hover {
-    color: rgb(104, 0, 202); 
+    color: rgb(104, 0, 202);
 }
 
 td {
@@ -121,6 +121,24 @@ button:hover {
         overflow: auto;
     }
 
+    .projetos {
+        z-index: 99;
+        color: white;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        top: 40%;
+        width: 100%;
+    }
+
+    .projetos a:hover {
+        color: rgb(212, 212, 212);
+
+    }
+
     .texto-final {
         color: white;
         display: block;
@@ -213,7 +231,7 @@ nav:hover {
         text-align: center;
         font-family: 'Exo 2', sans-serif;
         width: 100%;
-        top: 30%;
+        top: 35%;
         z-index: 3;
         padding-top: 10px;
         margin-top: 70px;
@@ -252,6 +270,25 @@ nav:hover {
         transition: all 1.5s ease-in-out;
         box-sizing: border-box;
         overflow: auto;
+    }
+
+    .projetos {
+        z-index: 99;
+        color: white;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        top: 55%;
+        width: 100%;
+        transition: all 1.5s ease-in-out;
+    }
+
+    .projetos a:hover {
+        color: rgb(212, 212, 212);
+
     }
 }
 
